@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <title>CheckOut</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Your choice"></div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="billing.html">CheckOut</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="basket-wrapper">
+        <div class="basket-buttons">
+            <button id="button-add-basket" class="basket"></button>
+            <label for="button-add-basket">Added to Basket</label>
+            <button id="button-clear-basket" class="basket"></button>
+            <label for="button-add-basket">Clear Basket</label>
+            <button id="button-pay" class="basket"></button>
+            <label for="button-add-basket">PAY For Your Order</label>
+        </div>
+        <div class="basket-list">
+            <div class="show-price">
+                <h3>Your Basket</h3>
+                <h3 id="price"></h3>
+            </div>
+            <table class="show-order"> </table>
+        </div>
+        <div class="anime">
+            <img src="images/order.gif" alt="Your order is being prepeared" width="210px" height="184px">
+            <h4>Your order is being prepeared...</h4>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

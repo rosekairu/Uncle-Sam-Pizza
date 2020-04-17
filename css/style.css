@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,51 +9,67 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    position: absolute;
-
-    left: 0;
-    padding: 0 50px;
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
     background-color: wheat;
     width: 100%;
-    box-sizing: border-box;
 }
 
 header.logo {
     float: left;
 }
 
-header nav {
-    float: right;
-}
-
-header nav ul {
+.navbar-links ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-header nav ul li {
+.navbar-links li {
     list-style: none;
 }
 
-header nav ul li a {
-    height: 50px;
+.navbar-links li a {
+    display: block;
+    height: 40px;
     line-height: 50px;
-    padding: 0 20px;
+    padding: 1rem;
     text-decoration: none;
 }
 
-header nav ul li a:hover {
-    color: violet;
+.navbar-links li a:hover {
+    color: crimson;
 }
 
-.menu-toggle {
-    color: thistle;
-    float: right;
-    line-height: 50px;
-    font-size: 24px;
-    cursor: pointer;
+@media (max-width:500px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .navbar-links {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
 }
 
 #section1 {
@@ -60,116 +80,193 @@ header nav ul li a:hover {
     border-bottom: yellowgreen;
 }
 
+/*styling menu section*/
+
 #section2 {
-    margin-top: 5px;
+    margin-top: -5px;
     background-color: azure;
+}
+
+#section2 p {
+    padding: 15px;
+    font-size: large;
+    color: tomato;
 }
 
 .container-fluid {
     width: 80%;
 }
 
-.container-fluid1 {
-    width: 100%;
-    text-indent: 0.5in;
-    margin-top: -0.21in;
-    background-color: aquamarine;
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
 }
 
-#toppings input {
-    margin-left: 0.2in;
-    margin-bottom: 0in;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.row2 {
-    background-color: wheat;
-    display: -ms-flexbox;
-    /* IE10 */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*styling checkout*/
+
+.basket-buttons {
     display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    margin: 0 -16px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
 
-.col-25 {
-    -ms-flex: 25%;
-    /* IE10 */
-    flex: 25%;
+.basket {
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
 }
 
-.col-50 {
-    -ms-flex: 50%;
-    /* IE10 */
-    flex: 50%;
+#button-add-basket {
+    background: url("../images/basket.jpg") round;
 }
 
-.col-75 {
-    -ms-flex: 70%;
-    /* IE10 */
-    flex: 70%;
+#button-clear-basket {
+    background: url("../images/clean.jpeg") round;
 }
 
-.col-25,
-.col-50,
-.col-75 {
-    padding: 0 16px;
+.basket-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0px;
+    flex: 2;
 }
 
-.container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 5px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
+#button-pay {
+    background: url("../images/pay.png") round;
 }
 
-input[type=text] {
-    width: 90%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+.button-cancel {
+    background: url("../images/cancel.png") round;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
 }
 
-label {
-    margin-bottom: 10px;
+table {
+    width: 100%;
+    margin: 0% 10%;
+    border: none;
+    border-collapse: collapse;
+    border: spacing 0px;
+}
+
+th span {
+    color: red;
+}
+
+td {
+    padding: 0px;
+    margin: 0px;
+}
+
+.show-price {
+    width: 100%;
+    margin: 0% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    text-decoration: underline;
+    color: rgb(21, 21, 107);
+}
+
+.anime {
+    display: flex;
+    margin: 0 auto;
+}
+
+.anime-show {
     display: block;
 }
 
-.icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
+.animate_content {
+    animation: animate 3s ease;
 }
 
-.btn {
+/*styling Contact form*/
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    resize: vertical;
+}
+
+input[type=submit] {
     background-color: #4CAF50;
     color: white;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 12px 20px;
     border: none;
-    width: 100%;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 17px;
 }
 
-.btn:hover {
+input[type=submit]:hover {
     background-color: #45a049;
 }
 
-span.price {
-    float: right;
-    color: grey;
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-    .row {
-        flex-direction: column-reverse;
-    }
+/*styling footer*/
 
-    .col-25 {
-        margin-bottom: 20px;
-    }
+.social-media {
+    position: fixed;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    left: 0;
+    bottom: 0%;
+    background-color: lavenderblush;
+    color: black;
+    font-family: "Josefin";
+    font-size: 2vw;
+}
+
+.social-media .row {
+    padding-top: 0.5%;
+    justify-content: center;
+    width: 70%;
+}
+
+.social-media p {
+    padding-top: 1%;
+    font-weight: bold;
+}
+
+.social-media img {
+    border-radius: 80%;
+}
+
+.social-media img:hover {
+    box-shadow: 5px 5px 5px grey;
 }

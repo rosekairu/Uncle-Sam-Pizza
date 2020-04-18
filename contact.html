@@ -27,46 +27,80 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script type="text/jquery" src="js/footer.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <div class="footer">
-        <div class="social-media">
-            <p><em> Uncle Sam's Pizza </em></p>
-            <div class="row">
-                <div class="col-md-1">
-                    <img src="images/social/twitter.png" alt="twitter" />
-                </div>
-                <div class="col-md-1">
-                    <img src="images/social/facebook.png" alt="facebook" />
-                </div>
-                <div class="col-md-1">
-                    <img src="images/social/g_plus.png" alt="google plus" />
-                </div>
-
-                <div class="col-md-1">
-                    <img src="images/social/you_tube.png" alt="youtube" />
+    <section class="home-img">
+        <div style="background-image: url(images/bg_1.jpg);">
+            <div class="slider-item">
+                <div style="background-image: url(images/bg_3.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row slider-text justify-content-center align-items-center">
+                            <div class="col-md-7 col-sm-12 text-center ftco-animate">
+                                <h1 class="mb-3 mt-5 bread">Contact Us</h1>
+                                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span>
+                                    <span>Contact</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p> Copyright &copy 2020</p>
         </div>
-    </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="container mt-5">
+            <div class="row block-9">
+                <div class="col-md-4 contact-info">
+                    <div class="row">
+                        <div class="col-md-12 mb-4" style="font-size: 20px;color: white;">
+                            <h4 class="h4">Contact Information</h4>
+                        </div>
+                        <div class="col-md-12 mb-3" style="color: blue;">
+                            <p><span>Address:</span> 987 West 21th Street, Nairobi, KE 00016</p>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <p><span>Phone:</span> <a href="tel://1234567920">+254 123 456 789</a></p>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <p><span>Website:</span> <a href="#">yoursite.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <form action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="7" class="form-control"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

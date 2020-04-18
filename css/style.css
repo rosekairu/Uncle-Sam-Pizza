@@ -77,7 +77,6 @@ header.logo {
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
-    border-bottom: yellowgreen;
 }
 
 /*styling menu section*/
@@ -237,7 +236,6 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-/*styling footer*/
 
 .social-media {
     position: fixed;

@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
     <title>Menu</title>
 </head>
@@ -63,9 +62,8 @@
                                 <img src="images/pizza-1.jpg">
                             </a>
                             <div class="text">
-                                <h3>Italian Pizza</h3>
+                                <h4>Italian Pizza</h4>
                                 <p>Wheat-based dough topped with tomatoes, cheese, anchovies, olives, meat </p>
-                                <p class="price"><span>Ksh 1250</span> <a href="#" class="btn">Order</a></p>
                             </div>
                         </div>
                     </div>
@@ -75,10 +73,9 @@
                                 <img src="images/pizza-2.jpg">
                             </a>
                             <div class="text">
-                                <h3>Greek Pizza</h3>
+                                <h4>Greek Pizza</h4>
                                 <p>Shallow pan pizza with spongy, airy, and light crust topped with tomatoes and cheese.
                                 </p>
-                                <p class="price"><span>KSh 800</span> <a href="#" class="btn">Order</a></p>
                             </div>
                         </div>
                     </div>
@@ -88,9 +85,8 @@
                                 <img src="images/pizza-3.jpg">
                             </a>
                             <div class="text p-4">
-                                <h3>Caucasian Pizza</h3>
+                                <h4>Caucasian Pizza</h4>
                                 <p>Sed ultricies cursus odio. Morbi eu felis magna.</p>
-                                <p class="price"><span>KSh 950</span> <a href="#" class="btn">Order</a></p>
                             </div>
                         </div>
                     </div>
@@ -101,9 +97,8 @@
                                 <img src="images/pizza-4.jpg">
                             </a>
                             <div class="text p-4">
-                                <h3>American Pizza</h3>
+                                <h4>American Pizza</h4>
                                 <p>Praesent posuere magna eu molestie posuere. </p>
-                                <p class="price"><span>KSh1200</span> <a href="#" class="btn">Order</a></p>
                             </div>
                         </div>
                     </div>
@@ -113,9 +108,8 @@
                                 <img src="images/pizza-5.jpg">
                             </a>
                             <div class="text p-4">
-                                <h3>Tomatoe Pie</h3>
+                                <h4>Tomatoe Pie</h4>
                                 <p>Proin sed tortor quis nibh placerat efficitur.</p>
-                                <p class="price"><span>KSh 700</span> <a href="#" class="btn">Order</a>
                                 </p>
                             </div>
                         </div>
@@ -126,9 +120,8 @@
                                 <img src="images/pizza-6.jpg">
                             </a>
                             <div class="text p-4">
-                                <h3>Margherita</h3>
+                                <h4>Margherita</h4>
                                 <p>. Ut sollicitudin magna felis, placerat gravida felis dapibus et.</p>
-                                <p class="price"><span>Ksh 1000</span> <a href="#" class="btn">Order</a>
                                 </p>
                             </div>
                         </div>
@@ -174,7 +167,7 @@
             <!-- Here is the table where size is selected. -->
             <div id="sizetable">
                 <h4 class="tablehead">Select Size*:</h4>
-                <div class="menu initiallyHidden">
+                <div class="menu initiallyHidden" style="font-size: 17px; color: mediumblue;">
                     <input type="radio" name="size" value="Small"> Small<br>
                     <input type="radio" name="size" value="Medium"> Medium<br>
                     <input type="radio" name="size" value="Large"> Large<br>
@@ -185,17 +178,17 @@
             <!-- Here is the table where cheese is selected. -->
             <div id="cheesetable">
                 <h4 class="tablehead">Select Cheese*:</h4>
-                <div class="menu initiallyHidden">
-                    <h1><input type="radio" name="cheese" value="No"> No Cheese<br></h1>
-                    <h2><input type="radio" name="cheese" value="Regular"> Regular<br></h2>
-                    <h3> <input type="radio" name="cheese" value="Extra"> Extra Cheese<br></h3>
+                <div class="menu initiallyHidden" style="font-size: 17px; color: mediumblue;">
+                    <input type="radio" name="cheese" value="No"> No Cheese<br>
+                    <input type="radio" name="cheese" value="Regular"> Regular<br>
+                    <input type="radio" name="cheese" value="Extra"> Extra Cheese<br>
                 </div>
             </div>
             <br>
             <!-- Here is the table where crust type is selected. -->
             <div id="crusttable">
                 <h4 class="tablehead">Select Crust*:</h4>
-                <div class="menu initiallyHidden">
+                <div class="menu initiallyHidden" style="font-size: 17px; color: mediumblue;">
                     <input type="radio" name="crust" value="Plain"> Plain Crust<br>
                     <input type="radio" name="crust" value="Garlic Butter"> Garlic Butter Crust<br>
                     <input type="radio" name="crust" value="Cheese-Stuffed"> Cheese-Stuffed Crust<br>
@@ -207,7 +200,7 @@
             <!-- Here is the table where sauce type is selected. -->
             <div id="saucetable">
                 <h4 class="tablehead">Select Sauce*:</h4>
-                <div class="menu initiallyHidden">
+                <div class="menu initiallyHidden" style="font-size: 17px; color: mediumblue;">
                     <input type="radio" name="sauce" value="Marinara"> Marinara Sauce<br>
                     <input type="radio" name="sauce" value="White"> White Sauce<br>
                     <input type="radio" name="sauce" value="Barbecue"> Barbecue Sauce<br>
@@ -218,7 +211,7 @@
             <!-- Here is the table where multiple meats may be selected. -->
             <div id="meattable">
                 <h4 class="tablehead">Select your choice of Meat(s):</h4>
-                <div class="menu initiallyHidden">
+                <div class="menu initiallyHidden" style="font-size: 17px; color: mediumblue;">
                     <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
                     <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
                     <input type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
@@ -231,7 +224,7 @@
             <!-- Here is the table where multiple veg may be selected. -->
             <div id="vegtable">
                 <h4 class="tablehead">Select your choice of Topping(s):</h4>
-                <div class="menu initiallyHidden">
+                <div class="menu initiallyHidden" style="font-size: 17px; color: mediumblue;">
                     <input type="checkbox" name="veg" value="Tomatoes"> Fresh Tomatoes<br>
                     <input type="checkbox" name="veg" value="Onions"> Onions<br>
                     <input type="checkbox" name="veg" value="Olives"> Black Olives<br>
@@ -277,7 +270,8 @@
                         <td id="totalprice"></td>
                     </tr>
                 </tbody>
-            </table>
+            </table> <br>
+            <a href='billing.html' style="margin-left: 5in;"><button>PROCED TO CHECKOUT</button></a>
             <br>
             <br>
         </div>
@@ -287,7 +281,8 @@
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

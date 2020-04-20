@@ -1,0 +1,31 @@
+#text {
+    padding-top: 7%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#deliveryOptions {
+    display: none;
+}
+
+#delivery {
+    display: none;
+    text-align: center;
+    padding: 3%
+}
+
+#pickUpConfirmation,
+#deliveryConfirmation {
+    display: none;
+    text-align: center;
+}
+
+div.total,
+div.name,
+div.location,
+div.totalDel,
+div.phone {
+    display: inline;
+    font-weight: bold;
+}

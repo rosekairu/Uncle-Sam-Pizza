@@ -6,10 +6,6 @@ function insert(myForm) {
     document.getElementsByClassName('panel panel-primary').value = a;
     deliveryaddress = a;
 
-    myForm = {
-        street_number: 'short_name',
-        route: 'long_name',
-        locality: 'long_name',
-        administrative_area_level_1: 'short_name',
-    }
-};
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}};

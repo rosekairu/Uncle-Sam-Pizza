@@ -253,135 +253,13 @@ h3 {
     background-repeat: no-repeat;
 }
 
-/*styling menu section*/
 
-#section2 {
-    background-image: url("../images/bg_1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-#section2a {
-    background-color: #121618;
-    height: -100vh;
-}
-
-h2 {
-    color: black;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-h4 {
-    color: cyan;
-}
-
-#section2 p {
-    padding: 15px;
-    font-size: large;
-    color: azure;
-}
-
-.container-fluid {
-    width: 100%;
-}
-
-.column {
-    float: left;
-    width: 30%;
-    padding: 8px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-    .col {
-        width: 100%;
-    }
-}
-
-/* Create five equal columns that floats next to each other */
-.col {
-    float: left;
-    width: 20%;
-    padding: 5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .column {
-        width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-/*styling button*/
-.price {
-    width: 50px;
-    color: blanchedalmond;
-    font-size: 5px;
-}
-
-.price span {
-    color: blanchedalmond;
-    font-size: 20px;
-}
-
-.btn {
-    cursor: pointer;
-    border-radius: 0;
-    box-shadow: blanchedalmond;
-    font-size: 20px;
-}
-
-.btn:hover,
-:active,
-:focus {
-    color: crimson;
-}
-
-
-.initiallyHidden {
-    display: none;
-}
-
-.menu {
-    margin-left: 20px;
-}
-
-.footer-img {
-    background-image: url("../images/about.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50%;
-    width: 100%;
-}
 
 
 /*styling billing/checkout*/
 
 #section3 {
-    background-image: url("../images/b.jpg");
+    background-image: url("../images/bg_3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
@@ -430,6 +308,10 @@ h4 {
     z-index: -1;
 }
 
+#pizza {
+    display: inline;
+}
+
 span {
     font-size: 60px;
     color: darken(#121618, 50%);
@@ -471,7 +353,7 @@ span {
     position: relative;
 }
 
-.text h3 {
+.media-body h3 {
     font-size: 20px;
 }
 
@@ -482,86 +364,4 @@ span {
 
 span {
     color: #121618;
-}
-
-.block-20 {
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 270px;
-}
-
-.block-23 ul {
-    padding: 0;
-}
-
-.block-23 ul li>a {
-    display: table;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-.block-23 ul li span {
-    color: rgba(white, .7);
-}
-
-.block-23 ul li .icon,
-.text {
-    display: table-cell;
-    vertical-align: top;
-}
-
-.block-23 ul li .icon {
-    width: 40px;
-    font-size: 18px;
-    padding-top: 2px;
-    color: rgba(white, 1);
-}
-
-.contact-section.contact-info p span {
-    color: white;
-}
-
-
-.contact-form.form-group {
-    position: relative;
-}
-
-.contact-form .form-control {
-    border: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
-    height: 58px;
-    padding-left: 0;
-    padding-right: 0;
-    background: transparent;
-    color: rgba(255, 255, 255, .9);
-    font-size: 13px;
-    border-radius: 0px;
-    box-shadow: none;
-}
-
-.contact-form .form-control:focus,
-:active {
-    border-color: #121618;
-}
-
-
-.contact-form.form-control textarea {
-    height: inherit;
-}
-
-.block-9.form-control {
-    color: aliceblue;
-    outline: none;
-    box-shadow: none;
-    font-size: 10px;
-}
-
-.block-9 span {
-    color: white;
-    font-size: 20px;
 }

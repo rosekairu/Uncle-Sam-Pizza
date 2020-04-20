@@ -16,10 +16,10 @@ $(document).ready(function () {
             alert("Please enter the subject matter")
             return false;
         } else if (message == "") {
-            alert("Please give us feedback")
+            alert("Please Enter Your Phone Number")
             return false;
         } else {
-            alert("Dear " + name + ", we have received your message. Thank you for reaching out to us.");
+            alert("Dear " + name + ", We have received your message. Thank you for reaching out to us .");
         }
         $("button").on('click', function () {
             $('form').each(function () {

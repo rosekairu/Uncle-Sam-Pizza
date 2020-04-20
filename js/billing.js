@@ -1,11 +1,36 @@
-var deliveryaddress;
+$(document).ready(function () {
+    //Initialize tooltips
+    $('.nav-tabs > li a[title]').tooltip();
+    toggle
 
-function insert(myForm) {
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
 
-    //var a = prompt("Please enter your delivery address", "Your address here");
-    document.getElementsByClassName('panel panel-primary').value = a;
-    deliveryaddress = a;
+        var $target = $(e.target);
+
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.toggle .breadcrumb_checkout li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.toggle .breadcrumb_checkout li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
 
 function prevTab(elem) {
     $(elem).prev().find('a[data-toggle="tab"]').click();
-}};
+}

@@ -1,31 +1,17 @@
-#text {
-    padding-top: 7%;
-    padding-bottom: 5%;
+.form-group .form-control {
+    border: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    height: 50px;
     padding-left: 0;
     padding-right: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, .9);
+    font-size: 13px;
+    border-radius: 0px;
+    box-shadow: none;
 }
 
-#deliveryOptions {
-    display: none;
-}
-
-#delivery {
-    display: none;
-    text-align: center;
-    padding: 3%
-}
-
-#pickUpConfirmation,
-#deliveryConfirmation {
-    display: none;
-    text-align: center;
-}
-
-div.total,
-div.name,
-div.location,
-div.totalDel,
-div.phone {
-    display: inline;
-    font-weight: bold;
+h4 {
+    margin-top: 1in;
+    color: cyan;
 }

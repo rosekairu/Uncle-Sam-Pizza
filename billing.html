@@ -94,72 +94,44 @@
     </div>
     <div id="delivery">
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="jumbotron">
-                    <form id="deliveryDetails">
-                        <h5>Please fill the following for delivery:</h5>
-                        <div class="form-group">
-                            <div class="form-group">
-                                <label for="location">Delivery location:</label>
-                                <input type="text" class="form-control" id="location" placeholder="Location..."
-                                    required>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <div class="delivery">
+                    <div id="deliveryDetails">
+                        <h4>Please fill the following for delivery:</h4>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <form action="" class="delivery-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="username" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="Your Email">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+254 123 456 789"
-                                pattern="[+254]{4} [0-9]{3} [0-9]{6}" required><br><br>
-                            <small>Format: +254 123 456789</small><br><br>
-                        </div>
-                        <button type="submit" class="btn submit" id="delivery-details">Deliver</button>
-                    </form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="location" placeholder="Location">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="phone" cols="30" rows="7" class="form-control"
+                                    placeholder="Phone"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" id="submit-button" value="DELIVERY"
+                                    class="btn btn-primary py-3 px-5">
+                            </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
-    <div id="pickUpConfirmation">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="jumbotron">
-                    <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i><br><br>
-                    <p>
-                        <div class="name"></div>, your order has been successfully placed!<br><br>Total amount
-                        payable at the store on pickup is Ksh. <div class="total"></div>.
-                    </p>
-                    <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it"
-                        style="background-color:green">Got it!</a>
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
-    <div id="deliveryConfirmation">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="jumbotron">
-                    <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i><br><br>
-                    <p>
-                        <div class="name"></div>, your order has been successfully placed!<br><br>The delivery fee
-                        to <div class="location"></div> is Ksh.200.<br><br>Total amount payable to the courier on
-                        delivery is Ksh. <div class="totalDel"></div>.<br><br>In case there are any changes to your
-                        order, we shall reach you on: <div class="phone"></div>.
-                    </p>
-                    <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it"
-                        style="background-color:green">Got it!</a>
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="js/billing.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.js"
+                    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+                <script type="text/javascript" src="js/script.js"></script>
+                <script src="js/billing.js"></script>
 </body>
 
 </html>

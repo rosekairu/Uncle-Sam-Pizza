@@ -11,32 +11,32 @@ function invoice() {
     console.log("size=" + size);
     var sizePrice = 0;
     if (size === "Small") {
-        sizePrice = 6;
+        sizePrice = 800;
     };
     if (size === "Medium") {
-        sizePrice = 10;
+        sizePrice = 1000;
     };
     if (size === "Large") {
-        sizePrice = 14;
+        sizePrice = 1200;
     };
     if (size === "Mega") {
-        sizePrice = 16;
+        sizePrice = 1400;
     };
     console.log("sizePrice=" + sizePrice);
 
     // Setting cheese and cheesePrice based on size + extra cheese selection
     var cheese = document.querySelector('input[name="cheese"]:checked').value;
     console.log("cheese=" + cheese);
-    var cheesePrice = 0;
+    var cheesePrice = 100;
     if (cheese === "Extra") {
         if (size === "Small") {
-            cheesePrice = 1;
+            cheesePrice = 100;
         } else if (size === "Medium") {
-            cheesePrice = 2;
+            cheesePrice = 200;
         } else if (size === "Large") {
-            cheesePrice = 3;
+            cheesePrice = 300;
         } else {
-            cheesePrice = 4;
+            cheesePrice = 400;
         };
     };
     console.log("cheesePrice=" + cheesePrice);
@@ -44,9 +44,9 @@ function invoice() {
     // Setting crust and crustPrice based on selection
     var crust = document.querySelector('input[name="crust"]:checked').value;
     console.log("crust=" + crust);
-    var crustPrice = 0
+    var crustPrice = 150
     if (crust = "Cheese-Stuffed") {
-        crustPrice = 3;
+        crustPrice = 300;
     };
     console.log("crustPrice=" + crustPrice);
 
@@ -55,7 +55,7 @@ function invoice() {
     console.log("sauce=" + sauce);
 
     // Setting meatSelect array and meatPrice based on multiple check boxes selected. Also setting up meatDisplay to convert the array into a convenient string.
-    var meatPrice = 0
+    var meatPrice = 200
     var meat = document.getElementsByName("meat");
     var meatSelect = [];
     var meatDisplay = "";
@@ -82,7 +82,7 @@ function invoice() {
     }
 
     // Setting vegSelect array and vegPrice based on multiple check boxes selected
-    var vegPrice = 0;
+    var vegPrice = 100;
     var veg = document.getElementsByName("veg");
     var vegSelect = [];
     var vegDisplay = "";
@@ -117,18 +117,18 @@ function invoice() {
 
     // Enter values into the invoice table
     $("#size").html(size + " Pizza");
-    $("#sizeprice").html(" $" + sizePrice + ".00");
+    $("#sizeprice").html(" Ksh" + sizePrice + ".00");
     $("#crust").html(crust + " Crust");
-    $("#crustprice").html("+" + crustPrice + ".00");
+    $("#crustprice").html("Ksh" + crustPrice + ".00");
     $("#cheese").html(cheese + " Cheese");
-    $("#cheeseprice").html("+" + cheesePrice + ".00");
+    $("#cheeseprice").html("Ksh" + cheesePrice + ".00");
     $("#sauce").html(sauce + " Sauce");
     $("#sauceprice").html("+0.00");
     $("#meat").html(meatDisplay);
-    $("#meatprice").html("+" + meatPrice + ".00");
+    $("#meatprice").html("Ksh" + meatPrice + ".00");
     $("#veg").html(vegDisplay);
     $("#vegprice").html("+" + vegPrice + ".00");
-    $("#totalprice").html(" $" + totalPrice + ".00");
+    $("#totalprice").html(" Ksh" + totalPrice + ".00");
 
 
 

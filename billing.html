@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/billing.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
     <title>CheckOut</title>
 </head>
@@ -53,7 +52,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 ftco-animate">
+                    <div class="col-md-4">
                         <div class="media d-block text-center block-6 services">
                             <div class="icon d-flex justify-content-center align-items-center mb-5">
                                 <img src="images/courier.jpg">
@@ -64,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ftco-animate">
+                    <div class="col-md-4">
                         <div class="media d-block text-center block-6 services">
                             <div class="icon d-flex justify-content-center align-items-center mb-5">
                                 <img src="images/delivery.gif">
@@ -77,7 +76,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ftco-animate">
+                    <div class="col-md-4">
                         <div class="media d-block text-center block-6 services">
                             <div class="icon d-flex justify-content-center align-items-center mb-5">
                                 <img src="images/pizza.jpg">
@@ -93,12 +92,91 @@
             </div>
         </section>
     </div>
-
+    <div class="form-group">
+        <label for="pizza-number">Number of Pizzas</label>
+        <select class="form-control" id="pizza-number" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <button type="submit" name="submitButton" class="btn submit" id="placeorder">Place Order</button>
+    </form>
+    </div>
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+    </div>
+    <div id="delivery">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <form id="deliveryDetails">
+                        <h5>Please fill the following for delivery:</h5>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="location">Delivery location:</label>
+                                <input type="text" class="form-control" id="location" placeholder="Location..."
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+254 123 456 789"
+                                pattern="[+254]{4} [0-9]{3} [0-9]{6}" required><br><br>
+                            <small>Format: +254 123 456789</small><br><br>
+                        </div>
+                        <button type="submit" class="btn submit" id="delivery-details">Deliver</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <div id="pickUpConfirmation">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i><br><br>
+                    <p>
+                        <div class="name"></div>, your order has been successfully placed!<br><br>Total amount
+                        payable at the store on pickup is Ksh. <div class="total"></div>.
+                    </p>
+                    <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it"
+                        style="background-color:green">Got it!</a>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <div id="deliveryConfirmation">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i><br><br>
+                    <p>
+                        <div class="name"></div>, your order has been successfully placed!<br><br>The delivery fee
+                        to <div class="location"></div> is Ksh.200.<br><br>Total amount payable to the courier on
+                        delivery is Ksh. <div class="totalDel"></div>.<br><br>In case there are any changes to your
+                        order, we shall reach you on: <div class="phone"></div>.
+                    </p>
+                    <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it"
+                        style="background-color:green">Got it!</a>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/billing.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/billing.js"></script>
 </body>
 
 </html>

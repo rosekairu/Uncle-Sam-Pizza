@@ -16,5 +16,5 @@ Uncle-Sam's Pizza website was developed using HTML5, CSS, Bootstrap CSS, Javascr
 ## Support and contact details
 Incase of any issues arising from using Delani Studio website kindly reach out to me via email at rosekairu@gmail.com
 
-### [MIT License](https://github.com/rosekairu/Uncle-Sam-Pizza/edit/master/LICENSE)
+### [MIT License](https://github.com/rosekairu/Uncle-Sam-Pizza/blob/master/LICENSE)
 Copyright (c) 2020 **Rose Kairu**
